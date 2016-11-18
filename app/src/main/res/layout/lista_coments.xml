@@ -1,0 +1,77 @@
+<?xml version= "1.0" encoding= "utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/imgredo"
+        android:elevation="6dp" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitulo"
+        android:layout_alignStart="@+id/txtTitulo"
+        android:layout_below="@+id/txtTitulo"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txtComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNome"
+        android:layout_alignStart="@+id/txtNome"
+        android:layout_below="@+id/txtNome"
+        android:text="Comentario"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtComentario"
+        android:elevation="5dp"
+        android:numStars="5"
+        android:rating="5"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:isIndicator="true"
+        />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/imgFoto"
+        android:layout_toRightOf="@+id/imgFoto"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

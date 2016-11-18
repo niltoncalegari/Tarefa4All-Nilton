@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.TelaPincipalActivity">
+    <item
+        android:id="@+id/menu_voltar"
+        android:icon="@drawable/btvolt"
+        android:title="Voltar"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_pin"
+        android:icon="@drawable/pin"
+        android:title="Pin"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/menuEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        />
+
+    <item
+        android:id="@+id/menu_lupa"
+        android:icon="@drawable/lupa"
+        android:title="Lupa"
+        app:showAsAction="always" />
+
+</menu>
